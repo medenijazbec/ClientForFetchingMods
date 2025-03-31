@@ -3,7 +3,7 @@ A client for fetching minecraft mods off a TrueNas Server that hosts them, to en
 
 **ClientForFetchingMods (CFFM)** is a Windows Forms tool that helps you **download and manage Minecraft mods** from a remote TrueNAS-hosted SFTP share. It securely downloads `.jar` mod files, automatically backs up your existing mods, transfers new ones to your local `.minecraft\mods` folder, and offers a convenient drag-and-drop interface along with comprehensive logging.
 
-![ClientForFetchingMods Logo](https://raw.githubusercontent.com/YourUser/ClientForFetchingMods/main/.github/images/logo.png)
+![mcsrvrhlpr](https://github.com/user-attachments/assets/0158557d-288d-44d4-9986-34c86527ecd8)
 
 ## Features
 
