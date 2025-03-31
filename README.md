@@ -22,7 +22,7 @@ A client for fetching minecraft mods off a TrueNas Server that hosts them, to en
 
 ### 1. Download ClientForFetchingMods
 
-1. Visit the [Releases](https://github.com/YourUser/ClientForFetchingMods/releases) page.
+1. Visit the [Releases](https://github.com/medenijazbec/ClientForFetchingMods/releases) page.
 2. Download the latest **`ClientForFetchingMods.exe`** (precompiled for Windows x64).
 3. Place the executable in a folder of your choice (e.g., `C:\MinecraftTools`).
 
@@ -61,7 +61,51 @@ A client for fetching minecraft mods off a TrueNas Server that hosts them, to en
 
 ### Prerequisites
 
-- [.NET 9 SDK](https://dotnet.microsoft.com/download/dotnet/9.0)
-- [Visual Studio](https://visualstudio.microsoft.com/) or [VS Code](https://code.visualstudio.com/)
+- **.NET 9 SDK**  
+  Download and install the [.NET 9 SDK](https://dotnet.microsoft.com/download/dotnet/9.0).
+
+- **Visual Studio 2022** or **Visual Studio Code**  
+  You can use Visual Studio 2022 (recommended for full IDE support) or VS Code with the C# extension.
 
 ### Steps
+
+1. **Clone the Repository**  
+   Open a terminal and run:
+   ```bash
+   git clone https://github.com/medenijazbec/ClientForFetchingMods.git
+   cd ClientForFetchingMods
+
+2. **Open the Solution**
+   Visual Studio: Open the ClientForFetchingMods.sln solution file.
+   Visual Studio Code: Open the repository folder and allow the C# extension to load the project.
+
+3. **Restore Dependencies**
+   Visual Studio will automatically restore NuGet packages on build. Alternatively, run:
+   `dotnet restore`
+
+4. **Build the Project**
+   In Visual Studio, select Build → Build Solution.
+   Or from the command line, run:
+   `dotnet build -c Release`
+
+5. **Publish the Application**
+   To create a single-file, self-contained executable for Windows x64, run:
+   `dotnet publish -c Release -r win-x64 --self-contained true /p:PublishSingleFile=true`
+   The published output will be located in the `bin/Release/net9.0/win-x64/publish` directory.
+
+   **Troubleshooting**
+   If you experience issues with missing dependencies or extra files, ensure that the correct runtime identifier (win-x64) is used and that all NuGet packages are restored.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
